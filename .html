@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cookie Example</title>
+</head>
+<body>
+
+<h1>Cookie Access Example</h1>
+
+<script>
+    // Retrieve and log all cookies stored by the current website
+    console.log("Cookies: ", document.cookie);
+    
+    // Optional: Set a new cookie (for demonstration purposes)
+    document.cookie = "testCookie=hello; SameSite=Lax; Secure";
+    
+    console.log("Updated Cookies: ", document.cookie);
+</script>
+
+</body>
+</html>
