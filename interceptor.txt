@@ -1,0 +1,16 @@
+POST / HTTP/1.1
+Host: chal.competitivecyber.club:9999
+Content-Length: 36
+Cache-Control: max-age=0
+Accept-Language: en-US,en;q=0.9
+Upgrade-Insecure-Requests: 1
+Origin: http://chal.competitivecyber.club:9999
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.120 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://chal.competitivecyber.club:9999/
+Accept-Encoding: gzip, deflate, br
+Cookie: session=.eJwljDEKwCAMAP-SuQGljRE_U1JMQFCHSqfSv9fS7Ya7u6GMXXIrHZJJHbrAVTIkECZS5YhRgkMiEjzYDJ2sQU0375lgykPPLk1n8eF_el55kRqL.Zu9EBg.marolQOdH5af8SOg3U58dARIsIc
+Connection: keep-alive
+
+username=useradmin&password=password
