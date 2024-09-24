@@ -1,9 +1,7 @@
 def do_POST(self):
-    # Parse POST data
     content_length = int(self.headers.get('Content-Length'))
     post_data = self.rfile.read(content_length)
 
-    # Inject malicious cookies
     malicious_cookies = http.cookies.SimpleCookie()
     malicious_cookies['malicious_cookie'] = 'malicious_value'
     self.send_response(200)
