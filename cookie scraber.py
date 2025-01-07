@@ -3,12 +3,11 @@ import http.cookies
 import ssl
 import os
 
-# Set up HTTPS server
 server_address = ('', 443)
 httpd = http.server.HTTPServer(server_address, RequestHandler)
 httpd.socket = ssl.wrap_socket(httpd.socket, certfile='server.crt', keyfile='server.key')
 
-# Define a secure cookie storage mechanism
+
 cookie_storage = os.path.join(os.path.dirname(__file__), 'cookies.json')
 
 class RequestHandler(http.server.BaseHTTPRequestHandler):
